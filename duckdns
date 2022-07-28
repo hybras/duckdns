@@ -1,6 +1,6 @@
 #!/bin/zsh
 
-CONFIG_FILE="$HOME/.duckdns"
+CONFIG_FILE="$HOME/config/.duckdns"
 
 if [[ -f $CONFIG_FILE ]]; then
   . $CONFIG_FILE
