@@ -5,5 +5,5 @@ CONFIG_FILE="$HOME/config/.duckdns"
 if [[ -f $CONFIG_FILE ]]; then
   . $CONFIG_FILE
   echo url="https://www.duckdns.org/update?domains=$DOMAIN&token=$TOKEN&ip=$(tailscale ip)" | \
-    curl -k -o $HOME/.duckdns.log -K -
+    curl -k -o - -K -
 fi
